@@ -421,7 +421,7 @@
 
       <div class="content has-text-justified">
         <p>
-          We manually spcify image flows for several LIBERO-LONG tasks to demonstrate the interactive property of FLIP. <br>
+          We <b>manually</br> spcify image flows for several LIBERO-LONG tasks to demonstrate the interactive property of FLIP. <br>
           <b>Note the flows are different with the flows in the training dataset.</b>
         </p>
       </div>
@@ -450,7 +450,7 @@
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Zero-Shot Results</h2>
 
@@ -460,19 +460,19 @@
       </p>
     </div>
 
-    <div class="columns is-multiline is-centered">
+    <div class="columns is-multiline is-centered"> -->
       <!-- Video 1 -->
-      <div class="column is-one-quarter">
-      </div>
+      <!-- <div class="column is-one-quarter">
+      </div> -->
       <!-- Video 2 -->
-      <div class="column is-one-quarter">
+      <!-- <div class="column is-one-quarter">
             <video autoplay muted loop style="width: 200px; height: 200px; object-fit: cover; border-radius: 0;" controlsList="nodownload noremoteplayback noprogressbar">
             <source src="videos/zero_shot/0.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-      </div>
+      </div> -->
       <!-- Video 3 -->
-      <div class="column is-one-quarter">
+      <!-- <div class="column is-one-quarter">
             <video autoplay muted loop style="width: 200px; height: 200px; object-fit: cover; border-radius: 0;" controlsList="nodownload noremoteplayback noprogressbar">
             <source src="videos/zero_shot/1.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -481,7 +481,7 @@
       <div class="column is-one-quarter">
       </div>      
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -489,7 +489,13 @@
 
     <div class="content has-text-justified">
       <p>
-        We show how will FLIP perfrom if we add visual distractions on the initial image.
+        We show how will FLIP perfrom if we add visual distractions on the initial image. In the two cases, we manually add an image of apple
+        as the visual distraction. If the apple is on the target obejct (left case), the model-based planning will fall in several steps;
+         however, if the apple is on the background (right case), the model-based planning can successfully continue for a long time, showing 
+         our model can resist kinds of visual distractions. <br>
+         
+         It is worth noting that the generated flows are stabler than the generated videos, 
+         showing the advantages of using flows as the action representation.
       </p>
     </div>
 
